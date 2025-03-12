@@ -28,29 +28,29 @@ This project aims to classify concrete crack images using a deep learning model 
 
 ## Project Structure
 
-*Data Loading*: Load images from the dataset directory.
+* *Data Loading*: Load images from the dataset directory.
 
-*Data Inspection*: Visualize sample images and class labels.
+* *Data Inspection*: Visualize sample images and class labels.
 
-*Data Splitting*: Split the dataset into training, validation, and test sets.
+* *Data Splitting*: Split the dataset into training, validation, and test sets.
 
-*Data Augmentation*: Apply transformations such as flipping and rotation.
+* *Data Augmentation*: Apply transformations such as flipping and rotation.
 
-*Model Creation*: Build a classification model using MobileNetV2 as a feature extractor.
+* *Model Creation*: Build a classification model using MobileNetV2 as a feature extractor.
 
-*Model Compilation*: Configure the optimizer, loss function, and evaluation metrics.
+* *Model Compilation*: Configure the optimizer, loss function, and evaluation metrics.
 
-*Training*: Train the model using TensorBoard logging and early stopping.
+* *Training*: Train the model using TensorBoard logging and early stopping.
 
 ---
 
 ## Model Architecture
 
-*Base Model*: MobileNetV2 (pretrained on ImageNet, frozen during training)
+* *Base Model*: MobileNetV2 (pretrained on ImageNet, frozen during training)
 
-*Augmentation*: Random flipping and rotation
+* *Augmentation*: Random flipping and rotation
 
-*Classifier*: GlobalAveragePooling2D + Dense layer with softmax activation
+* *Classifier*: GlobalAveragePooling2D + Dense layer with softmax activation
 
 ![Model Architecture](Img/model.png)
 
@@ -58,17 +58,17 @@ This project aims to classify concrete crack images using a deep learning model 
 
 ### Training Details
 
-*Optimizer*: Adam (learning rate = 0.0001)
+* *Optimizer*: Adam (learning rate = 0.0001)
 
-*Loss Function*: Sparse Categorical Crossentropy
+* *Loss Function*: Sparse Categorical Crossentropy
 
-*Batch Size*: 32
+* *Batch Size*: 32
 
-*Image Size*: 160x160
+* *Image Size*: 160x160
 
-*Epochs*: 10
+* *Epochs*: 10
 
-*Callbacks*: TensorBoard logging, EarlyStopping (patience=3)
+* *Callbacks*: TensorBoard logging, EarlyStopping (patience=3)
 
 ---
 
