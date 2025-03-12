@@ -52,7 +52,7 @@ This project aims to classify concrete crack images using a deep learning model 
 
 * *Classifier*: GlobalAveragePooling2D + Dense layer with softmax activation
 
-![Model Architecture](Img/model.png)
+![Model Architecture](Img/model.png=300x200)
 
 ---
 
